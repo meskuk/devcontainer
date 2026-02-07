@@ -1,8 +1,9 @@
 {
   "name": "cscloud-devcontainer",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
-  "privileged": true,
+  "postStartCommand": "bash scripts/first-run.sh",
   "remoteUser": "codespace"
 }
