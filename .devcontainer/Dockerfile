@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/devcontainers/base:bookworm
+FROM debian:bookworm-slim
 
 USER root
 
-RUN apt update && apt install -y systemd ansible && apt clean
-#RUN useradd -u 1000 -U codespace
+RUN apt update && apt install -y supervisor ansible && apt clean
+RUN useradd -u 1000 -U codespace
 
-ENTRYPOINT ["/sbin/init"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
