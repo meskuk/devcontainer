@@ -1,0 +1,8 @@
+{
+  "name": "cscloud-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "privileged": true,
+  "remoteUser": "codespace"
+}
