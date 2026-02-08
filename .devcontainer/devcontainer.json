@@ -4,6 +4,6 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postStartCommand": "bash scripts/first-run.sh",
+  "postAttachCommand": "bash scripts/first-run.sh",
   "remoteUser": "codespace"
 }
