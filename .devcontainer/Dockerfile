@@ -4,4 +4,4 @@ USER root
 
 RUN apt update && apt install -y supervisor ansible && apt clean
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
