@@ -4,6 +4,6 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postAttachCommand": "bash scripts/first-run.sh",
+  "postStartCommand": "bash scripts/first-run.sh",
   "remoteUser": "vscode"
 }
