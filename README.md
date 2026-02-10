@@ -1,3 +1,5 @@
 # "Codespace Cloud" devcontainer
 
-The sole purpose of this devcontainer is to create an environment for the Ansible playbooks to run.
+`mcr.microsoft.com/devcontainers/base:debian` configured to run [Supervisor](https://supervisord.org/) on start.
+
+Intended to be used with [ansible-csc](https://github.com/meskuk/ansible-csc).
